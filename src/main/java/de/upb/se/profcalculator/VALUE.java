@@ -1,17 +1,18 @@
 package de.upb.se.profcalculator;
 
-public class VALUE {
+public class Value {
+	private Integer value;
 
-	Integer value;
+	public Value(int value){
+		this.value = value;
+	}
 
-	public VALUE(int value)
-	{
-this.value = value;
-}
-
-	public String toString()
-{
+	public String toString(){
 		return value.toString();
 	}
 
-public int getValue() { return value.intValue(); }}
+	public int getValue(){ 
+		return value.intValue();
+	}
+
+}
